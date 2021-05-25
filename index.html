@@ -8,20 +8,29 @@
   <title>Wrikan</title>
 </head>
 <body>
-  <div class="app-title">割り勘アプリ</div>
+  <h1 class="app-title">割り勘アプリ</h1>
   <div class="form-content">
-    <div class="money-input">金額を入力してください</div>
-    <div class="person-input">人数を入力してください</div>
+      <div class="money-input">
+        <input type='text', placeholder="金額を入力してください", id="money", value="">
+      </div>
+        <div class="person-input">
+          <input type='text', placeholder="人数を入力してください", id="person", value="">
+      </div>
+      <select id="unit">
+        <option value="10">10円単位</option>
+        <option value="100">100円単位</option>
+        <option value="1000">1000円単位</option>
+      </select>
   </div>
-  <div class="money-separate">
-    <div id="name-input">
-      氏名を入力してください
-    </div>
-    <div id="money-display">
-      金額を表示
-    </div>
+  <div class="middle-content">
+      <div id="name" class="hidde">
+        <input type='text', placeholder="氏名を入力してください", id="name-input", value="">
+      </div>
+      <div id="money-display"></div> 
   </div>
-  <div class="start-btn js-start-btn">START</div>
+  <div id="btn">
+     <input type='button', value="START", class="btn"> 
+  </div>
     <script src="index.js"></script>
   </body>
 </html>
